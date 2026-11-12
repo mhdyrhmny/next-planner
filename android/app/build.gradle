@@ -6,8 +6,8 @@ plugins {
 
 android {
     namespace = "com.example.planner"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 35
+    ndkVersion = "26.1.10909125"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -28,8 +28,6 @@ android {
 
     buildTypes {
         release {
-            // Uses debug signing for easy personal APK distribution.
-            // For Play Store, replace with proper signingConfig.
             signingConfig = signingConfigs.debug
         }
     }
